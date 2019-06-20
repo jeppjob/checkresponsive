@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset='utf8'>
+	<meta name='viewport' content='width=device-width'>
+	<meta name="keywords"
+		content="responsive, responsive tool, mobile responsive, responsive checker, mobile responsive checker">
+	<meta name="description" content="A very simple tool for checking website responsiveness.">
+
+	<title>CheckResponsive | Check website responsiveness </title>
+	<link rel="icon" href="favicon.png">
+	<link rel='stylesheet' href='main.css'>
+
+	
+</head>
+
+<body>
+	<header>
+		<div class="logo">
+			<img src="checkresponsive.png" alt="CheckResponsive">
+		</div>
+		<p>Check responsive is a very simple tool that allows you to check your website on a standard mobile or tablet
+			view.<br>Just enter the URL in the input below and click Check URL, choose Mobile or Tablet view to see it
+			is responsive on those devices.</p>
+	</header>
+	<section class="container">
+		<div class="controls">
+			<div class="urlinput">
+				<input id="srcUrl" type="url" placeholder="Enter URL here... https://example.com"/>
+				<button onclick="checkUrl()">Check URL</button>
+				<button onclick="mobileWidth()">Mobile</button>
+				<button onclick="tabletWidth()">Tablet</button>
+			</div>
+		</div>
+
+		<div class="srccontainer">
+			<iframe id="iframe" title="iframe" src="http://example.com/" frameborder="0"></iframe>
+		</div>
+	</section>
+
+	<script src="checkresponsive.js"></script>
+</body>
+
+</html>
